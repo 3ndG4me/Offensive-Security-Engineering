@@ -1,4 +1,4 @@
-# Offensive Security Engineering Udemy
+# Offensive Security Engineering
 Various course materials, scripts, and configurations from my book "Red Team Engineering".
 
 Also the supporting material for my Offensive Security Engineering Course on Udemy
