@@ -1,5 +1,5 @@
 # Offensive Security Engineering
-Various course materials, scripts, and configurations from my book "Red Team Engineering".
+Various materials, scripts, and configurations for my book [Red Team Engineering](https://nostarch.com/red-team) (No Starch Press, 2026).
 
 Also the supporting material for my Offensive Security Engineering Course on Udemy
 
