@@ -113,16 +113,16 @@ resource "aws_instance" "primary_c2" {
       host        = self.public_ip
     }
   }
-
-  provisioner "remote-exec" {
-    inline = ["chmod +x /tmp/c2_setup.sh && sudo /tmp/c2_setup.sh"]
-    connection {
-      type        = "ssh"
-      user        = "kali"
-      private_key = file("~/.ssh/primary-c2-key.pem")
-      host        = self.public_ip
-    }
-  }
+# Temporarily broken for now scp the setup script and run it manually after server is deployed
+ # provisioner "remote-exec" {
+ #   inline = ["chmod +x /tmp/c2_setup.sh && sudo /tmp/c2_setup.sh"]
+ #   connection {
+ #     type        = "ssh"
+ #     user        = "kali"
+ #     private_key = file("~/.ssh/primary-c2-key.pem")
+ #     host        = self.public_ip
+ #   }
+ # }
 
   tags = {
     Name = "Primary C2"
